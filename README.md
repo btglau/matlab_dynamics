@@ -8,6 +8,8 @@ Quantum dynamics uses fft/ifft (i.e. Fourier grid Hamiltonian), and can do:
 - Paper: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.93.062128
 - https://doi.org/10.1016/0021-9991(91)90137-A
 
+I would like to highlight propagate_1D_lvn.m in particular - it makes extensive use of nested functions with ode45/113 to simplify passing things around. I do not know if this is best practice, or even best efficiency ... please let me know!
+
 Semiclassical Monte-Carlo (Newtonian analytic propagation + QM scattering rates):
 - Phonon, photon, and impurity scattering
 - Paper: http://onlinelibrary.wiley.com/doi/10.1002/aenm.201701000/full
