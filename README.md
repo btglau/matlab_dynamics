@@ -6,10 +6,12 @@ Quantum dynamics uses fft/ifft (i.e. Fourier grid Hamiltonian), and can do:
 - Conservative: split-operator, short-iterative lanczos, chebyshev
 - Dissipative: stochastic surrogate hamiltonian, density matrix + lindblad
 - Paper: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.93.062128
+- https://doi.org/10.1016/0021-9991(91)90137-A
 
 Semiclassical Monte-Carlo (Newtonian analytic propagation + QM scattering rates):
 - Phonon, photon, and impurity scattering
 - Paper: http://onlinelibrary.wiley.com/doi/10.1002/aenm.201701000/full
+- https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.55.645
 
 Both modules output results in a MATLAB structure, and have an argument parser for accepting input. The main function which calls dynamics / aggregates output, dynOpt_func, can do full parameter space sweeps or use MATLAB's built in stochastic search techniques (such as genetic algorithms) to search parameter space.
 
