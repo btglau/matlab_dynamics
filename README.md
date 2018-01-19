@@ -5,27 +5,26 @@ Quantum dynamics uses fft/ifft (i.e. Fourier grid Hamiltonian), and can do:
 - Time-dependent potentials, arbitrary shapes through piecewise / Fourier series
 - Conservative: split-operator, short-iterative lanczos, chebyshev
 - Dissipative: stochastic surrogate hamiltonian, density matrix + lindblad
-Paper: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.93.062128
+- Paper: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.93.062128
 
 Semiclassical Monte-Carlo (Newtonian analytic propagation + QM scattering rates):
 - Phonon, photon, and impurity scattering
-Paper: http://onlinelibrary.wiley.com/doi/10.1002/aenm.201701000/full
+- Paper: http://onlinelibrary.wiley.com/doi/10.1002/aenm.201701000/full
 
 Both modules output results in a MATLAB structure, and have an argument parser for accepting input. The main function which calls dynamics / aggregates output, dynOpt_func, can do full parameter space sweeps or use MATLAB's built in stochastic search techniques (such as genetic algorithms) to search parameter space.
 
 All code is "heavily" MATLAB optimized, but does not take advantage of the newest R2016 feature that rolls bsxfun functionality into element-by-element operations (i.e. bsxfun(@times,A,B) is now A.*B).
 
 ### Required MATLAB toolboxes:
-MATLAB
+- MATLAB
+- Optimization Toolbox
+- Image Processing Toolbox
+- Statistics and Machine Learning Toolbox
+- Global Optimization Toolbox
+- Parallel Computing Toolbox
+- MATLAB Distributed Computing Server
 
-Optimization Toolbox
+### Getting started
+Check example input.
 
-Image Processing Toolbox
-
-Statistics and Machine Learning Toolbox
-
-Global Optimization Toolbox
-
-Parallel Computing Toolbox
-
-MATLAB Distributed Computing Server
+Input file -> dynOpt_func -> selects quantum dynamics or monte carlo -> processes input with dynOpt_input or mcInput -> calls appropriate dynamics function dynFitness / mcFitness; dynFitness further calls the 'initialize' family functions to set up the grid, then calls various 'propagate' functions.
