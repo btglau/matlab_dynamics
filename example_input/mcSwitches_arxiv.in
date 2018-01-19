@@ -1,0 +1,88 @@
+Fixed code (Jan 19 2017) specularity 0.75
+doX 1 doX2 1
+MC comp_x [-4,1,0.75] doSweep [4,8] verbose 1 comp_range [0,0.25] Lx [100r1000] doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900]
+MC comp_x [-4,1,0.75] doSweep [4,8] verbose 1 comp_range [0,0.25] Lx [100r1000] doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230]
+MC comp_x [-4,1r16,0.75] doSweep [6,4] verbose 1 comp_range [0,0.25] Lx 500 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900]
+MC comp_x [-4,1r16,0.75] doSweep [6,4] verbose 1 comp_range [0,0.25] Lx 500 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230]
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.25] Lx 500 doPBCx 1 Ly [100r1000] doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.25] Lx 500 doPBCx 1 Ly [100r1000] doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.25] Lx 500 doPBCx 1 Ly 100 Lz [100r1000] doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.25] Lx 500 doPBCx 1 Ly 100 Lz [100r1000] doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230] specularity 0.75
+
+DC
+MC comp_x [-4,1,0.75] doSweep [8,4] verbose 1 comp_range [0,0.25] Ex [0r-250,0,0] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.1,0r1.75E4] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [8,4] verbose 1 comp_range [0,0.25] Ex [0r-250,0,0] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [8,4] verbose 1 comp_range [0,0.25] Ex [0r-175,0,0] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [8,4] verbose 1 comp_range [0,0.25] Ex [0r-210,0,0] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.1,0r1.2E4] specularity 0.75 T0 400 Te 400
+MC comp_x [-4,1,0.75] doSweep [8,4] verbose 1 comp_range [0,0.25] Ex [0r-120,0,0] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r2000] specularity 0.75 T0 400 Te 400
+MC comp_x [-4,1,0.75] doSweep [8,4] verbose 1 comp_range [0,0.25] Ex [0r-90,0,0] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r100] specularity 0.75 T0 400 Te 400
+
+Main run
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r100] specularity 0.75 T0 400 Te 400
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r2000] specularity 0.75 T0 400 Te 400
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.1,0r1.2E4] specularity 0.75 T0 400 Te 400
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.1,0r1.75E4] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,3] verbose 1 comp_range [0,0.1685r0.2127] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.1,0r1.75E4] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,3] verbose 1 comp_range [0,0.1685r0.2127] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.1,0r1.75E4] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,3] verbose 1 comp_range [0,0.058r0.1464] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r3900] specularity 0.75
+MC comp_x [-4,1,0.75] doSweep [4,3] verbose 1 comp_range [0,0.1464r0.2348] Lx 500 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r230] specularity 0.75
+
+Controls
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] specularity [0r1] Lx 350 doPBCx 1 doPBCy 1  doPBCz 1 doValley 1 doFlux 1 dt_slice 400
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] specularity [0r1] Lx 350 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] specularity [0r1] Lx 350 Ly 1000 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400
+MC comp_x [-4,1,0.75] doSweep [4,6] verbose 1 comp_range [0,0.058r0.5] specularity [0r1] Lx 350 Ly 10000 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ni 1E18
+notes: upper two illumination intensities (up to top 3) are bad inputs
+0.05 0r1E4 -> 0r6E3
+0.04 0r6500 -> 0r3900
+0.03 0r2500 -> 0r1500
+0.02 0r600 -> 0r360
+0.01 0r50 -> 0r30
+
+comp_range from 1x to 10x thermal energy of electrons
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.04,0r3900]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.03,0r1500]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.01,0r30]
+
+Geometry
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx [100r1000] doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx [100r1000] doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360]
+MC comp_x [-4,1r11,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3]
+MC comp_x [-4,1r11,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly [100r1000] doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly [100r1000] doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly 100 Lz [100r1000] doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly 100 Lz [100r1000] doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360]
+
+DC work
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3] Ex [0r-1E4,0,0]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360] Ex [0r-1E4,0,0]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3] Ex [0r-1E3,0,0]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360] Ex [0r-1E3,0,0]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r6E3] Ex [0r-400,0,0]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r360] Ex [0r-400,0,0]
+
+only 20 and 50 meV, ni 1E16, adjusted photon strengths
+DC / well depth
+MC comp_x [-4,1,0.75] doSweep [8,6] verbose 1 comp_range [0,0.3] Lx 360 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r5E3] Ex [0r-225,0,0]
+MC comp_x [-4,1,0.75] doSweep [8,6] verbose 1 comp_range [0,0.3] Lx 360 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r300] Ex [0r-225,0,0]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 360 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r5E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.058r0.5] Lx 360 Ly 100 doPBCx 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r300]
+
+Geometry
+MC comp_x [-4,1,0.75] doSweep [6,8] verbose 1 comp_range [0,0.3] Lx [100r1000] doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r5E3]
+MC comp_x [-4,1,0.75] doSweep [6,8] verbose 1 comp_range [0,0.3] Lx [100r1000] doPBCx 1 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r300]
+MC comp_x [-4,1r16,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r5E3]
+MC comp_x [-4,1r16,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCy 1 doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r300]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly [100r1000] doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r5E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly [100r1000] doPBCz 1 doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r300]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly 100 Lz [100r1000] doValley 1 doFlux 1 dt_slice 400 photon [0.05,0r5E3]
+MC comp_x [-4,1,0.75] doSweep [6,6] verbose 1 comp_range [0,0.3] Lx 100 doPBCx 1 Ly 100 Lz [100r1000] doValley 1 doFlux 1 dt_slice 400 photon [0.02,0r300]
