@@ -15,9 +15,15 @@ All code is "heavily" MATLAB optimized, but does not take advantage of the newes
 
 ### Required MATLAB toolboxes:
 MATLAB
+
 Optimization Toolbox
+
 Image Processing Toolbox
+
 Statistics and Machine Learning Toolbox
+
 Global Optimization Toolbox
+
 Parallel Computing Toolbox
+
 MATLAB Distributed Computing Server
