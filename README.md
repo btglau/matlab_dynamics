@@ -1,4 +1,7 @@
 # matlab_dynamics
+
+*Note*: Since it will be quite hard to figure out how to use this code, the hope is that the propagate / mcFitness functions, which contain the code for the dynamics, can be used as skeletons for other work.
+
 A repository of MATLAB code that performs quantum dynamics on a grid, as well as semiclassical Monte-Carlo for semiconductors. The purpose of this code is to investigate the time-dependent velocity / position as a function of various potentials. The quantum dynamics is done on a grid, while the semiclassical Monte-Carlo uses a continuous axis. The quantum dynamics module is more for toy potentials, while the Monte-Carlo module is capable of including realistic scattering mechanisms found in semicondcutors.
 
 Quantum dynamics uses fft/ifft (i.e. Fourier grid Hamiltonian), and can do:
