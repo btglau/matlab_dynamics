@@ -36,8 +36,8 @@ Check example input.
 
 Run from within MATLAB with:
 
-dynFitness [commands] 
-or 
+dynFitness [commands] \
+or \
 dynFitness(Position,Name,Value,...)
 
 or, via command line (https://www.mathworks.com/help/matlab/ref/matlablinux.html)
