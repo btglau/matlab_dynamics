@@ -32,24 +32,24 @@ All code is "heavily" MATLAB optimized, but does not take advantage of the newes
 - MATLAB Distributed Computing Server
 
 ### Getting started
-Check example input.
+Check example input. All arguments to the code come in the form of Name-Value pairs, which are listed in `dynOpt_input.m` or `mcInput.m`.
 
 Run from within MATLAB with:
 ```MATLAB
-dynFitness [commands]
+dynFitness [name-value pairs]
 ```
 or
 ```MATLAB
-dynFitness(Position,Name,Value,...)
+dynFitness(Name,Value,...)
 ```
 
 or, via command line (https://www.mathworks.com/help/matlab/ref/matlablinux.html) \
 ```
-matlab -r [commands]
+matlab -r [name-value pairs]
 ```
 or
 ```
-matlab -nodisplay -nosplash -r [commands]
+matlab -nodisplay -nosplash -r [name-value pairs]
 ```
 
 ### Flow of program
