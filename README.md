@@ -38,7 +38,7 @@ Run from within MATLAB with:
 ```MATLAB
 dynFitness [commands]
 ```
-or \
+or
 ```MATLAB
 dynFitness(Position,Name,Value,...)
 ```
@@ -47,9 +47,10 @@ or, via command line (https://www.mathworks.com/help/matlab/ref/matlablinux.html
 ```
 matlab -r [commands]
 ```
-or \
+or
 ```
 matlab -nodisplay -nosplash -r [commands]
 ```
 
+### Flow of program
 Input file -> dynOpt_func -> selects quantum dynamics or monte carlo -> processes input with dynOpt_input or mcInput -> calls appropriate dynamics function dynFitness / mcFitness; dynFitness further calls the 'initialize' family functions to set up the grid, then calls various 'propagate' functions.
