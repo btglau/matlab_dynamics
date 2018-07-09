@@ -35,8 +35,9 @@ All code is "heavily" MATLAB optimized, but does not take advantage of the newes
 Check example input.
 
 Run from within MATLAB with:
-
+```MATLAB
 dynFitness [commands] \
+```
 or \
 dynFitness(Position,Name,Value,...)
 
